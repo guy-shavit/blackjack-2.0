@@ -1,0 +1,139 @@
+body {
+  background-image: url('./img/background.jpg'); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+.App {
+  box-sizing: center;
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.card-img {
+  animation: rotate-in 1s ease-in-out;
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(0);
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+.game-status {
+  color: white;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.game-status.win {
+  background-color: rgb(37, 135, 24);
+}
+
+.game-status.lose {
+  background-color: red;
+}
+
+button {
+  font-size: 50px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ff0019;
+}
+
+button:hover:not(:disabled) {
+  background-color: #62ff00;
+}
+
+img {
+  max-width: 250px;
+  height: auto;
+}
+
+.line {
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.betting-section {
+  font-size: 50px;
+}
+
+input {
+  font-size: 50px;
+  width: 300x;
+  height: 60px;
+}
